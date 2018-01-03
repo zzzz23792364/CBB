@@ -1,0 +1,40 @@
+# $Id: Make.generic,v 0.0.1 CBB $
+
+#
+# Author:  Zengchao
+# Contact: zengchao@cqu.edu.cn
+# Licence: Belong to the author 
+# Date:    2017.12.23
+#
+
+
+CBB_BIN =     $(CBB_BASE)/bin
+CBB_EXAMPLE = $(CBB_BASE)/example
+CBB_INCLUDE = $(CBB_BASE)/include
+CBB_LIB =     $(CBB_BASE)/lib
+CBB_MAKE =    $(CBB_BASE)/make
+CBB_SRC =     $(CBB_BASE)/src
+CBB_STUDY =   $(CBB_BASE)/study
+CBB_TOOLS =   $(CBB_BASE)/tools
+CBB_OBJ=      $(CBB_BASE)/obj
+
+
+#include $(CBB_BASE)/make/Make.env
+include $(CBB_BASE)/make/Make.tools
+include $(CBB_BASE)/make/Make.local
+
+
+CBB_INCLUDE_PATH := -I $(CBB_INCLUDE)
+CBB_INCLUDE_PATH += -I $(CBB_INCLUDE)/shell
+CBB_INCLUDE_PATH += -I $(CBB_INCLUDE)/sal
+
+CFLAGS += $(CBB_INCLUDE_PATH) 
+
+CFLAGS += -g 
+#CFLAGS += -pedantic 
+CFLAGS += -Wall
+#CFLAGS += -Werror
+#CFLAGS += -fno-strict-aliasing
+#CFLAGS += -DUNIX
+
+LDFLAGS += -lpthread -lm -lrt
