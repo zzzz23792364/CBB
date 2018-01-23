@@ -3,20 +3,30 @@
 
 
 
-
-
-#ifndef BPU_SHELL_H
-#define BPU_SHELL_H
+#ifndef _SHELL_H_H
+#define _SHELL_H_H
 
 #include <stdio.h>
+#include "parse.h"
+
 
 #define HIDE_CMD        0
 #define SHOW_CMD        1
 
 #define DEBUG           0
 
-#define CMD_MAX_ARGS		 20
-#define CMD_MAX_CHAR		 128
+
+
+#if 0
+typedef struct {
+  char *name;			/* User printable name of the function. */
+  rl_icpfunc_t *func;		/* Function to call to do the job. */
+  char *doc;			/* Documentation for this function.  */
+  char *usage;
+} COMMAND;
+#endif
+
+
 
 
 #define MIN_HIDE_CMD_LEN     4
@@ -63,20 +73,56 @@
 #define __WHITE          "\033[1;37m"
 
 
-typedef enum cmd_result_e
-{
-	CMD_OK = 0,
-	CMD_FAILED = -1,
-	CMD_USAGE = -2,
-	CMD_RESOURCE = -4
-}cmd_result_t;
+
+//extern int debug;
+//extern int shell_debug;
+//extern int bpu_shell(void);
+//extern int cmd_parse_line (char *pline,char **argv);
 
 
-extern int debug;
-extern int shell_debug;
-extern int bpu_shell(void);
-extern int cmd_parse_line (char *pline,char **argv);
 
+/*
+ * Typedef:     cmd_result_t
+ * Purpose:    Type retured from all commands indicating success, fail, 
+ *        or print usage.
+ */
+typedef enum cmd_result_e {
+    CMD_OK   = 0,            /* Command completed successfully */
+    CMD_FAIL = -1,            /* Command failed */
+    CMD_USAGE= -2,            /* Command failed, print usage  */
+    CMD_NFND = -3,            /* Command not found */
+    CMD_EXIT = -4,            /* Exit current shell level */
+    CMD_INTR = -5,            /* Command interrupted */
+    CMD_NOTIMPL = -6,            /* Command not implemented */
+} cmd_result_t;
+
+
+
+/*
+ * Typedef:    cmd_func_t
+ * Purpose:    Defines command function type
+ */
+typedef cmd_result_t (*cmd_func_t)(args_t *);
+
+/*
+ * Typedef:    cmd_t
+ * Purpose:    Table command match structure.
+ */
+typedef struct cmd_s {
+    parse_key_t    c_cmd;            /* Command string */
+    cmd_func_t    c_f;            /* Function to call */
+    const char     *c_usage;        /* Usage string */
+    const char    *c_help;        /* Help string */
+} cmd_t;
+
+
+
+#define DCL_CMD(_func,_usage) \
+	extern cmd_result_t _func(args_t*);	\
+	extern char _usage[];
+
+
+int shell(char *prompt);
 
 #endif
 

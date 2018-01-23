@@ -35,12 +35,15 @@ endif
 include $(CBB_BASE)/make/Make.generic
 include $(CBB_BASE)/make/Make.local
 
-READLINE_PATH = $(CBB_BASE)/tools/readline/readline
-NCURSES_PATH = $(CBB_BASE)/tools/ncurses/ncurse
+READLINE_PATH = $(CBB_BASE)/../readline
+NCURSES_PATH = $(CBB_BASE)/../ncurses
 CBB_INCLUDE_PATH += -I $(READLINE_PATH)/include
 #other_libs_objs += $(NCURSES_PATH)/lib/libncurses.a
 other_libs_objs += $(READLINE_PATH)/lib/libhistory.a
 other_libs_objs += $(READLINE_PATH)/lib/libreadline.a
+
+other_libs_objs += $(CBB_LIB)/libsal.a
+other_libs_objs += $(CBB_LIB)/libcommon.a
 
 
 include $(CBB_BASE)/make/Make.lib

@@ -3,22 +3,22 @@
 #include "shell.h"
 #include <string.h>
 #include <stdio.h>
-#include <time.h>
-
 #include <stdlib.h>
-#include <readline/readline.h>
+#include <pthread.h>
 
 extern void test_p();
+
+void* test(void *a)
+{
+
+}
+
 
 int
 main()
 {
-	test_p();
-	time_t ti;
-	time(&ti);
-	readline(NULL);
-	printf("i am main\n");
-	shell();
-
+//	pthread_t id;
+//	pthread_create(&id,NULL,test,NULL);
+	shell("CBB> ");
 	return 0;
 }

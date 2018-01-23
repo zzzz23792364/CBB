@@ -11,7 +11,8 @@
  * be here.  This file is not a general dumping-ground for all libc
  * routines needed by diagnostics, etc.
  */
-
+ 
+#include <unistd.h>
 #include <sal/core/libc.h>
 #include <sal/core/alloc.h>
 

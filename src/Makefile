@@ -32,6 +32,7 @@ include $(CBB_BASE)/make/Make.generic
 
 subdirs += shell
 subdirs += sal
+subdirs += common
 
 include $(CBB_BASE)/make/Make.subdirs
 

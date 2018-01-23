@@ -41,9 +41,12 @@ NCURSES_PATH = $(CBB_BASE)/tools/ncurses/ncurse
 CBB_INCLUDE_PATH += -I $(READLINE_PATH)/include
 
 LDFLAGS += -L $(CBB_LIB) -lshell 
+LDFLAGS += -lncurses
 #LDFLAGS += -L $(READLINE_PATH)/lib -lreadline 
-LDFLAGS += -L $(NCURSES_PATH)/lib -lncurses
+#LDFLAGS += -L $(NCURSES_PATH)/lib -lncurses
 #other_libs_objs += $(CBB_LIB)/libshell.a
+#other_libs_objs += $(CBB_LIB)/libcore.a
+
 
 include $(CBB_BASE)/make/Make.target
 

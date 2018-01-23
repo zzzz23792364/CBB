@@ -72,18 +72,6 @@
 #define	NULL	0
 #endif
 
-#if defined(VXWORKS) || defined(UNIX) || defined(__KERNEL__) || defined (LINUX)
-#define RTOS_STRINGS
-#endif
-
-#if defined(RTOS_STRINGS) && defined(__KERNEL__)
-#include <linux/string.h>
-#else
-#include <string.h>
-#endif
-
-#ifdef RTOS_STRINGS
-
 
 #define sal_strlen		strlen
 #define sal_strcpy		strcpy
@@ -123,7 +111,9 @@ void *sal_memcpy_wrapper(void *, const void *, size_t);
 
 #define sal_memset		memset
 
-#else /* !RTOS_STRINGS */
+#define SAL_RAND_MAX 32767
+
+#if 0
 
 extern int sal_strlen(const char *s);
 extern char *sal_strcpy(char *, const char *);
@@ -147,7 +137,6 @@ extern int sal_toupper(int c);
 extern int sal_tolower(int c);
 extern int sal_atoi(const char *nptr);
 
-#endif /* !RTOS_STRINGS */
 
 /* Always use our version of memcmp, since it is broken 
  * in certain OS-versions (e..g Linux 2.4.18)
@@ -181,11 +170,12 @@ extern int sal_sprintf(char *buf, const char *fmt, ...)
     COMPILER_ATTRIBUTE ((format (printf, 2, 3)));
 extern void sal_free_safe(void *ptr); 
 
-#define SAL_RAND_MAX 32767
+
 
 extern int sal_rand(void);
 extern void sal_srand(unsigned seed);
 extern uint32 sal_ceil_func(uint32 numerators , uint32 denominator);
 extern uint32 sal_floor_func(uint32 numerators , uint32 denominator);
+#endif
 
 #endif	/* !_SAL_LIBC_H */

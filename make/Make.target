@@ -31,11 +31,13 @@ deps := $(srcs:.c=.d)
 
 .PHONY: $(targetname) cur_objs subdir_objs clean 
 
+LDFLAGS += -lpthread -lm -lrt
 
-all: $(targetname)
 
-#bpu_shell.out:$(TARGET)
-#	$(OBJCOPY) --strip-debug $< $@
+all: $(targetname).strip
+
+$(targetname).strip:$(targetname) 
+	$(OBJCOPY) --strip-debug $< $@
 
 ifeq ($(MAKE_SHARED_LIB),)
 suddirs_staticlib=$(addprefix $(CBB_LIB)/lib,$(addsuffix .a,$(subdirs)))
@@ -43,7 +45,7 @@ endif
 
 $(targetname):cur_objs subdir_objs $(other_libs_objs) $(suddirs_staticlib)
 	$(CC) $(CFLAGS) $(objs) $(wildcard $(CBB_OBJ)/*.o) -o $@ $(other_libs_objs) $(suddirs_staticlib) \
-	$(LDFLAGS) -Wl,--start-group  -Wl,--end-group -Wl,-Map,$(targetmap) 
+	-Wl,--start-group  -Wl,--end-group -Wl,-Map,$(targetmap) $(LDFLAGS)
 
 
 cur_objs:$(objs)

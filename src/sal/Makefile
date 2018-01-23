@@ -36,6 +36,7 @@ include $(CBB_BASE)/make/Make.generic
 include $(CBB_BASE)/make/Make.local
 
 subdirs += core
+subdirs += appl
 
 include $(CBB_BASE)/make/Make.lib
 
