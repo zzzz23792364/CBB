@@ -1,9 +1,31 @@
+/********************************************************************************
+
+ **** Copyright (C), 2018, xx xx xx xx info&tech Co., Ltd.                ****
+
+ ********************************************************************************
+ * File Name     : log.h
+ * Author        : ZengChao
+ * Date          : 2018-01-24
+ * Description   : log.h header file
+ * Version       : 1.0
+ * Function List :
+ * 
+ * Record        :
+ * 1.Date        : 2018-01-24
+ *   Author      : ZengChao
+ *   Modification: Created file
+
+************************************************************************************/
 
 
 #ifndef _LOG_H_H
 #define _LOG_H_H
 
 #include <stdarg.h>
+
+
+#define LOG_TO_FILE
+
 
 #define BSLSINK_SINK_NAME_MAX           32
 #define BSLSINK_PREFIX_FORMAT_MAX       32
@@ -144,32 +166,48 @@ typedef struct bslsink_sink_s {
     (((chk_) >> BSL_SEVERITY_SHFT) & BSL_SEVERITY_MASK)
 
 
-int bsl_printf(const *format,...);
+int bsl_printf(const char* format,...);
 
 
 /* Macro for invoking "fast" checker */
 #define BSL_LOG(chk_, stuff_) do \
 { \
-    unsigned int mchk_ = chk_;          \
-    (void)mchk_;                        \
-    bsl_printf stuff_;                  \                                  
-} while (0)
+    unsigned int mchk_ = chk_;	\
+    (void)mchk_;	\
+    bsl_printf stuff_;	\
+} while(0)
 
 
 /* Any layer log macros */
+#if 0
 #define LOG_FATAL(ls_, stuff_)          BSL_LOG(ls_|BSL_FATAL, stuff_)
 #define LOG_ERROR(ls_, stuff_)          BSL_LOG(ls_|BSL_ERROR, stuff_)
 #define LOG_WARN(ls_, stuff_)           BSL_LOG(ls_|BSL_WARN, stuff_)
 #define LOG_INFO(ls_, stuff_)           BSL_LOG(ls_|BSL_INFO, stuff_)
 #define LOG_VERBOSE(ls_, stuff_)        BSL_LOG(ls_|BSL_VERBOSE, stuff_)
 #define LOG_DEBUG(ls_, stuff_)          BSL_LOG(ls_|BSL_DEBUG, stuff_)
+#endif
+
+#define LOG_FATAL(stuff_)          BSL_LOG(BSL_FATAL, stuff_)
+#define LOG_ERROR(stuff_)          BSL_LOG(BSL_ERROR, stuff_)
+#define LOG_WARN(stuff_)           BSL_LOG(BSL_WARN, stuff_)
+#define LOG_INFO(stuff_)           BSL_LOG(BSL_INFO, stuff_)
+#define LOG_VERBOSE(stuff_)        BSL_LOG(BSL_VERBOSE, stuff_)
+#define LOG_DEBUG(stuff_)          BSL_LOG(BSL_DEBUG, stuff_)
 
 
 #define cli_out bsl_printf 
 
 
-log_sever_info_t log_sever_array[];
+extern log_sever_info_t log_sever_array[];
 
 
+extern int log_file_severity_set(bsl_severity_t min,bsl_severity_t max);
+extern int log_console_severity_set(bsl_severity_t min, bsl_severity_t max);
+
+
+extern int bslsink_sink_add(bslsink_sink_t * sink);
+extern void bslsink_sink_t_init(bslsink_sink_t *sink);
+extern int log_init();
 
 #endif

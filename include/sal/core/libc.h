@@ -73,6 +73,7 @@
 #endif
 
 
+#if 0
 #define sal_strlen		strlen
 #define sal_strcpy		strcpy
 #define sal_strncpy		strncpy
@@ -81,8 +82,12 @@
 #define sal_strcat              strcat
 #define sal_strncat             strncat
 #define sal_strncmp             strncmp
+#endif
+
 #define sal_strchr              strchr
 #define sal_strrchr             strrchr
+
+#if 0
 #define sal_strspn              strspn
 #define sal_strtok              strtok
 #define sal_strtoul             strtoul
@@ -99,6 +104,7 @@
 #define sal_fprintf             fprintf 
 #define sal_fflush              fflush 
 #define sal_vfprintf            vfprintf 
+#endif
 
 
 

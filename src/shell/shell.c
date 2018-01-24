@@ -1,3 +1,21 @@
+/********************************************************************************
+
+ **** Copyright (C), 2018, xx xx xx xx info&tech Co., Ltd.                ****
+
+ ********************************************************************************
+ * File Name     : shell.c
+ * Author        : ZengChao
+ * Date          : 2018-01-24
+ * Description   : .C file function description
+ * Version       : 1.0
+ * Function List :
+ * 
+ * Record        :
+ * 1.Date        : 2018-01-24
+ *   Author      : ZengChao
+ *   Modification: Created file
+
+*************************************************************************************************************/
 
 
 #include <string.h>

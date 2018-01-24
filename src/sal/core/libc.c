@@ -13,6 +13,7 @@
  */
  
 #include <unistd.h>
+#include <string.h>
 #include <sal/core/libc.h>
 #include <sal/core/alloc.h>
 

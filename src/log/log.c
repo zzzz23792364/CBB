@@ -1,10 +1,30 @@
+/********************************************************************************
+
+ **** Copyright (C), 2018, xx xx xx xx info&tech Co., Ltd.                ****
+
+ ********************************************************************************
+ * File Name     : log.c
+ * Author        : ZengChao
+ * Date          : 2018-01-24
+ * Description   : .C file function description
+ * Version       : 1.0
+ * Function List :
+ * 
+ * Record        :
+ * 1.Date        : 2018-01-24
+ *   Author      : ZengChao
+ *   Modification: Created file
+
+*************************************************************************************************************/
 
 
 #include <stdlib.h>
 #include <sal/core/libc.h>
 
-
 #include "log.h"
+#include "logconsole.h"
+#include "logfile.h"
+
 
 bslsink_sink_t *bslsink_sinks;
 
@@ -14,9 +34,9 @@ log_sever_info_t log_sever_array[]=
 	{"Fatal",__RED__},
 	{"Error",__LIGHT_RED__},
 	{"Warning",__PURPLE__},
-	{"Info",__WHITE__},
+	{"Info",__GREEN__},
 	{"Verbose",__GREEN__},
-	{"Debug",__WHITE__},
+	{"Debug",__WHITE__}
 };
 
 
@@ -78,7 +98,7 @@ log_out_hook(bsl_meta_t *meta, const char *format, va_list args)
 }
 
 int 
-bsl_vprintf(const *format,va_list args)
+bsl_vprintf(const char*format,va_list args)
 {
 	const char *fmt = format;
     bsl_meta_t meta_data, *meta = &meta_data;
@@ -88,18 +108,18 @@ bsl_vprintf(const *format,va_list args)
     if (*fmt == '<') {
         fmt++;
         while (1) {
-            if (sal_strncmp(fmt, "c=%u", 4) == 0) {
+            if (strncmp(fmt, "c=%u", 4) == 0) {
                 unsigned int chk = va_arg(args, unsigned int);
                 meta->module = BSL_MODULE_GET(chk);
                 meta->severity = BSL_SEVERITY_GET(chk);
                 fmt += 4;
-            } else if (sal_strncmp(fmt, "f=%s", 4) == 0) {
+            } else if (strncmp(fmt, "f=%s", 4) == 0) {
                 meta->file = va_arg(args, char *);
                 fmt += 4;
-            } else if (sal_strncmp(fmt, "l=%d", 4) == 0) {
+            } else if (strncmp(fmt, "l=%d", 4) == 0) {
                 meta->line = va_arg(args, int);
                 fmt += 4;
-            } else if (sal_strncmp(fmt, "F=%s", 4) == 0) {
+            } else if (strncmp(fmt, "F=%s", 4) == 0) {
                 meta->func = va_arg(args, char *);
                 fmt += 4;
             } else {
@@ -122,7 +142,7 @@ bsl_vprintf(const *format,va_list args)
 }
 
 int 
-bsl_printf(const *format,...)
+bsl_printf(const char* format,...)
 {
 	int rc;
 	va_list vargs;
@@ -166,7 +186,12 @@ log_init()
 	bslsink_init();
 
 	log_console_init();
-//	log_file_init();
+
+#ifdef LOG_TO_FILE
+	log_file_init();
+#endif
+
+	return 0;
 }
 
 

@@ -34,10 +34,10 @@ deps := $(srcs:.c=.d)
 LDFLAGS += -lpthread -lm -lrt
 
 
-all: $(targetname).strip
+all:  $(targetname)
 
-$(targetname).strip:$(targetname) 
-	$(OBJCOPY) --strip-debug $< $@
+#$(targetname).strip:$(targetname) 
+#	$(OBJCOPY) --strip-debug $< $@
 
 ifeq ($(MAKE_SHARED_LIB),)
 suddirs_staticlib=$(addprefix $(CBB_LIB)/lib,$(addsuffix .a,$(subdirs)))
