@@ -1,0 +1,20 @@
+[main in log_test.c:28] Fatal: [0] LOG_ERROR TEST
+[1] CLI_OUT TEST
+[main in log_test.c:28] Fatal: [0] LOG_ERROR TEST
+[main in log_test.c:29] Error: [1] LOG_ERROR TEST
+[main in log_test.c:30] Warning: [2] LOG_WARN TEST
+[main in log_test.c:31] Info: [3] LOG_INFO TEST
+[main in log_test.c:32] Debug: [4] LOG_DEBUG TEST
+[5] CLI_OUT TEST
+[main in log_test.c:28] Fatal: [0] LOG_ERROR TEST
+[main in log_test.c:29] Error: [1] LOG_ERROR TEST
+[main in log_test.c:30] Warning: [2] LOG_WARN TEST
+[main in log_test.c:31] Info: [3] LOG_INFO TEST
+[main in log_test.c:32] Debug: [4] LOG_DEBUG TEST
+[5] CLI_OUT TEST
+[main in log_test.c:28] Fatal: [0] LOG_ERROR TEST
+[main in log_test.c:29] Error: [1] LOG_ERROR TEST
+[main in log_test.c:30] Warning: [2] LOG_WARN TEST
+[main in log_test.c:31] Info: [3] LOG_INFO TEST
+[main in log_test.c:32] Debug: [4] LOG_DEBUG TEST
+[5] CLI_OUT TEST
