@@ -12,7 +12,11 @@
 #include "sal/core/thread.h"
 
 
+<<<<<<< HEAD
 #define SERVER_PORT 8888
+=======
+#define SERVER_PORT 8111
+>>>>>>> 8621da6db479e63b9e2f02400623d3048c20a4cc
 #define CLIENT_PORT 6666
 
 int 
@@ -28,7 +32,11 @@ udp_client_init()
 	{
 		int size;
 		char sd_buf[512],rc_buf[512];
+<<<<<<< HEAD
 		printf("Input>> \n");
+=======
+		printf("Input>> ");
+>>>>>>> 8621da6db479e63b9e2f02400623d3048c20a4cc
 		
 		if(!fgets(sd_buf,512,stdin))
 			continue;

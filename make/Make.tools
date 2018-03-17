@@ -9,8 +9,13 @@
 
 # cross compiler variable
 
+<<<<<<< HEAD
 CROSS_COMPILE := arm-linux-
 #CROSS_COMPILE := 
+=======
+#CROSS_COMPILE := arm-linux-
+CROSS_COMPILE := 
+>>>>>>> 8621da6db479e63b9e2f02400623d3048c20a4cc
 
 CC := $(CROSS_COMPILE)gcc
 AR := $(CROSS_COMPILE)ar
