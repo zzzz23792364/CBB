@@ -34,12 +34,10 @@ include $(CBB_BASE)/make/Make.generic
 
 target_path = $(CBB_BIN)
 
-READLINE_PATH = $(CBB_BASE)/tools/readline/readline
-NCURSES_PATH = $(CBB_BASE)/tools/ncurses/ncurse
+subdirs := ns_src
 
-CBB_INCLUDE_PATH += -I $(READLINE_PATH)/include
-
-#LDFLAGS += -L $(CBB_LIB) -lshell 
+CFLAGS += -I $(CBB_BASE)/example/noise/ns_src
+#LDFLAGS += -L $(CBB_LIB) -lasound -lsal
 #LDFLAGS += -lncurses
 #LDFLAGS += -L $(READLINE_PATH)/lib -lreadline 
 #LDFLAGS += -L $(NCURSES_PATH)/lib -lncurses

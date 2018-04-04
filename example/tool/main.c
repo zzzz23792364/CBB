@@ -12,6 +12,7 @@
 #include <netinet/ip.h> /* superset of previous */
 
 
+<<<<<<< HEAD
 #define MCB_SWM_QUERY_CHANGE_VER                12792//²éÑ¯½»»»Ð¾Æ¬°æ±¾
 #define MCB_SWM_DLD_CHANGE_VER                  12793//ÏÂÔØ½»»»Ð¾Æ¬°æ±¾
 #define MCB_SWM_ACT_CHANGE_VER                  12794//¼¤»î½»»»Ð¾Æ¬°æ±¾
@@ -39,6 +40,11 @@ typedef struct cspl_header_s
 } cspl_header_t;
 
 
+=======
+typedef unsigned char U8;
+typedef unsigned int U32;
+
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 typedef struct ENODEB_DEV
 {
 	U8 shNum;                                       
@@ -71,16 +77,27 @@ typedef struct VER_QUERY
 
 typedef enum MSG_ID
 {
+<<<<<<< HEAD
 	QUERY = 12786,
 	DLD   = 12787,
 	ACT   = 12788,
 	CHECK = 12789
+=======
+	QUERY = 1,
+	DLD   = 2,
+	ACT   = 3,
+	CHECK = 4
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 } MSG_ID;
 
 
 typedef struct UDP_MSG
 {
+<<<<<<< HEAD
 	cspl_header_t type;
+=======
+	MSG_ID type;
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 	U8 msg[512];
 } UDP_MSG;
 
@@ -127,7 +144,11 @@ typedef struct VER_CHECK_RESULT_REPORT
 #define BSP_VERSION "10GMCB_SWITCH_eNB_V17B.005.3"
 #define FILE_PATH "switch.tar"
 
+<<<<<<< HEAD
 #define SERVER_PORT 10157
+=======
+#define SERVER_PORT 8888
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 #define CLINET_PORT 6666
 
 int sockfd;
@@ -137,7 +158,11 @@ void send_query(struct sockaddr* addr)
 {
 	UDP_MSG udp_msg;
 
+<<<<<<< HEAD
 	udp_msg.type.apiId = MCB_SWM_QUERY_CHANGE_VER;
+=======
+	udp_msg.type = QUERY;
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 
 	VER_QUERY request_data;
 
@@ -155,7 +180,11 @@ void send_dld(struct sockaddr* addr)
 {
 	UDP_MSG udp_msg;
 
+<<<<<<< HEAD
 	udp_msg.type.apiId = MCB_SWM_DLD_CHANGE_VER;
+=======
+	udp_msg.type = DLD;
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 
 	VER_DLD_REQUEST request_data;
 
@@ -174,7 +203,11 @@ void send_act(struct sockaddr* addr)
 {
 	UDP_MSG udp_msg;
 
+<<<<<<< HEAD
 	udp_msg.type.apiId = MCB_SWM_ACT_CHANGE_VER;
+=======
+	udp_msg.type = ACT;
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 
 	VER_ACT_REQUEST request_data;
 
@@ -224,7 +257,11 @@ void act_handler(UDP_MSG *msg)
 	printf("act-ulActResult:%d\n",ack_data.ulActResult);
 	printf("act-chNum:%d\n",ack_data.tPos.chNum);
 	printf("act-shNum:%d\n",ack_data.tPos.shNum);
+<<<<<<< HEAD
 	printf("act-slNum:%d\n",ack_data.tPos.slNum);
+=======
+	printf("quactery-slNum:%d\n",ack_data.tPos.slNum);
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 }
 
 
@@ -232,7 +269,11 @@ void act_handler(UDP_MSG *msg)
 void 
 ack_handler(UDP_MSG *msg)
 {
+<<<<<<< HEAD
 	switch(msg->type.apiId)
+=======
+	switch(msg->type)
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 	{
 		case QUERY:
 			query_handler(msg);
@@ -246,6 +287,7 @@ ack_handler(UDP_MSG *msg)
 	}
 }
 
+<<<<<<< HEAD
 void 
 fill_cspl_header(U16 msg_id,UDP_MSG *msg)
 {
@@ -260,6 +302,8 @@ fill_cspl_header(U16 msg_id,UDP_MSG *msg)
 	msg->type.transId = 0;
 	memset(msg->type.reserv,0,sizeof(msg->type.reserv));
 }
+=======
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 
 
 int 
@@ -287,9 +331,12 @@ main(int argc,char **argv)
 	to_sockaddr.sin_family = AF_INET;
 	to_sockaddr.sin_port = htons(SERVER_PORT);
 	to_sockaddr.sin_addr.s_addr = htonl(INADDR_ANY);
+<<<<<<< HEAD
 //	to_sockaddr.sin_addr.s_addr = inet_addr("10.161.50.101");
 
 	
+=======
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 
 	ret =bind(sockfd,(struct sockaddr*)&to_sockaddr,sizeof(to_sockaddr));
 	if(ret<0)
@@ -347,15 +394,22 @@ main(int argc,char **argv)
 		if(size<0)
 			perror("recvfrom:");
 
+<<<<<<< HEAD
 //		printf("ip=%s ....\n",inet_ntoa(from_sockaddr.sin_addr)); 
 
 
+=======
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 //		from_sockaddr.sin_family = AF_INET;
 //		from_sockaddr.sin_port = htons(CLINET_PORT);
 //		to_sockaddr.sin_addr.s_addr = htonl(INADDR_ANY);
 //		from_sockaddr.sin_addr.s_addr = inet_addr("10.161.50.110");
 
+<<<<<<< HEAD
 		fill_cspl_header(MCB_SWM_CHECK_CHANGE_VER,&udp_msg);
+=======
+		udp_msg.type = CHECK;
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 		memcpy(udp_msg.msg,&ack_data,sizeof(ack_data));
 		
 		size = sendto(sockfd,&udp_msg,sizeof(udp_msg),0,(struct sockaddr*)&from_sockaddr,sizeof(from_sockaddr));
@@ -374,10 +428,13 @@ main(int argc,char **argv)
 	}
 #endif
 
+<<<<<<< HEAD
 
 	
 
 
+=======
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 	while(1)
 	{
 //		size = sendto(sockfd,&ack_data,sizeof(ack_data),0,(struct sockaddr*)&from_sockaddr,sizeof(from_sockaddr));
@@ -386,6 +443,7 @@ main(int argc,char **argv)
 //			perror("sendto:");
 //		printf("sendtosendtosendto\n");
 
+<<<<<<< HEAD
 
 		from_sockaddr.sin_port = htons(8888);
 		from_sockaddr.sin_family = AF_INET;
@@ -397,6 +455,14 @@ main(int argc,char **argv)
 
 		if(!fgets(sd_buf,512,stdin))
 			continue;
+=======
+		char sd_buf[512],rc_buf[512];
+		printf("Input>> ");
+		
+		if(!fgets(sd_buf,512,stdin))
+			continue;
+
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 		if(!strncasecmp(sd_buf,"q",1))
 			send_query(&from_sockaddr);
 		

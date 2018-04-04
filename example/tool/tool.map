@@ -98,6 +98,7 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
  *(.gnu.hash)
  .gnu.hash      0x0000000000400298       0x30 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
 
+<<<<<<< HEAD
 .dynsym         0x00000000004002c8      0x288
  *(.dynsym)
  .dynsym        0x00000000004002c8      0x288 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
@@ -124,6 +125,34 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
  *(.rela.init)
  *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
  .rela.text     0x0000000000400718        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+=======
+.dynsym         0x00000000004002c8      0x270
+ *(.dynsym)
+ .dynsym        0x00000000004002c8      0x270 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.dynstr         0x0000000000400538      0x136
+ *(.dynstr)
+ .dynstr        0x0000000000400538      0x136 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.gnu.version    0x000000000040066e       0x34
+ *(.gnu.version)
+ .gnu.version   0x000000000040066e       0x34 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.gnu.version_d  0x00000000004006a8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000004006a8        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.gnu.version_r  0x00000000004006a8       0x50
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000004006a8       0x50 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.rela.dyn       0x00000000004006f8       0x30
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text     0x00000000004006f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
  *(.rela.fini)
  *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
  *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
@@ -132,14 +161,21 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
  *(.rela.ctors)
  *(.rela.dtors)
  *(.rela.got)
+<<<<<<< HEAD
  .rela.got      0x0000000000400718       0x18 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
  *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
  .rela.bss      0x0000000000400730       0x18 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+=======
+ .rela.got      0x00000000004006f8       0x18 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400710       0x18 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
  *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
  *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
  *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
  *(.rela.ifunc)
 
+<<<<<<< HEAD
 .rela.plt       0x0000000000400748      0x1c8
  *(.rela.plt)
  .rela.plt      0x0000000000400748      0x1c8 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
@@ -182,20 +218,73 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 .plt.got        0x0000000000400a70        0x8
  *(.plt.got)
  .plt.got       0x0000000000400a70        0x8 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+=======
+.rela.plt       0x0000000000400728      0x1b0
+ *(.rela.plt)
+ .rela.plt      0x0000000000400728      0x1b0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                [!provide]                        PROVIDE (__rela_iplt_start, .)
+ *(.rela.iplt)
+ .rela.iplt     0x00000000004008d8        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                [!provide]                        PROVIDE (__rela_iplt_end, .)
+
+.init           0x00000000004008d8       0x1a
+ *(SORT(.init))
+ .init          0x00000000004008d8       0x15 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
+                0x00000000004008d8                _init
+ .init          0x00000000004008ed        0x5 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+
+.plt            0x0000000000400900      0x130
+ *(.plt)
+ .plt           0x0000000000400900      0x130 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                0x0000000000400910                free@@GLIBC_2.2.5
+                0x0000000000400920                puts@@GLIBC_2.2.5
+                0x0000000000400930                strlen@@GLIBC_2.2.5
+                0x0000000000400940                __stack_chk_fail@@GLIBC_2.4
+                0x0000000000400950                htons@@GLIBC_2.2.5
+                0x0000000000400960                strchr@@GLIBC_2.2.5
+                0x0000000000400970                printf@@GLIBC_2.2.5
+                0x0000000000400980                __assert_fail@@GLIBC_2.2.5
+                0x0000000000400990                htonl@@GLIBC_2.2.5
+                0x00000000004009a0                sendto@@GLIBC_2.2.5
+                0x00000000004009b0                __libc_start_main@@GLIBC_2.2.5
+                0x00000000004009c0                fgets@@GLIBC_2.2.5
+                0x00000000004009d0                malloc@@GLIBC_2.2.5
+                0x00000000004009e0                strncasecmp@@GLIBC_2.2.5
+                0x00000000004009f0                recvfrom@@GLIBC_2.2.5
+                0x0000000000400a00                bind@@GLIBC_2.2.5
+                0x0000000000400a10                perror@@GLIBC_2.2.5
+                0x0000000000400a20                socket@@GLIBC_2.2.5
+ *(.iplt)
+ .iplt          0x0000000000400a30        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.plt.got        0x0000000000400a30        0x8
+ *(.plt.got)
+ .plt.got       0x0000000000400a30        0x8 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 
 .plt.bnd
  *(.plt.bnd)
 
+<<<<<<< HEAD
 .text           0x0000000000400a80     0x2892
  *(.text.unlikely .text.*_unlikely .text.unlikely.*)
  .text.unlikely
                 0x0000000000400a80        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
  .text.unlikely
                 0x0000000000400a80        0x0 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+=======
+.text           0x0000000000400a40     0x2812
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ .text.unlikely
+                0x0000000000400a40        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+ .text.unlikely
+                0x0000000000400a40        0x0 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
  *(.text.exit .text.exit.*)
  *(.text.startup .text.startup.*)
  *(.text.hot .text.hot.*)
  *(.text .stub .text.* .gnu.linkonce.t.*)
+<<<<<<< HEAD
  .text          0x0000000000400a80       0x2a /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
                 0x0000000000400a80                _start
  .text          0x0000000000400aaa        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
@@ -259,10 +348,75 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
  .fini          0x0000000000403314        0x4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
                 0x0000000000403314                _fini
  .fini          0x0000000000403318        0x5 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+=======
+ .text          0x0000000000400a40       0x2a /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                0x0000000000400a40                _start
+ .text          0x0000000000400a6a        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
+ *fill*         0x0000000000400a6a        0x6 
+ .text          0x0000000000400a70       0xc6 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+ .text          0x0000000000400b36      0x9ff main.o
+                0x0000000000400b36                send_query
+                0x0000000000400bd3                send_dld
+                0x0000000000400d0f                send_act
+                0x0000000000400e40                query_handler
+                0x0000000000400f43                dld_handler
+                0x0000000000400fe0                act_handler
+                0x000000000040107d                ack_handler
+                0x00000000004010cc                main
+ .text          0x0000000000401535     0x18bc /home/zengchao/share/CBB-master/lib/libsal.a(libc.o)
+                0x0000000000401535                sal_strlen
+                0x0000000000401567                sal_strcpy
+                0x00000000004015a6                sal_strncpy
+                0x0000000000401600                sal_strcmp
+                0x000000000040165d                memcpy
+                0x00000000004016b3                memset
+                0x00000000004016f4                sal_memcmp
+                0x000000000040176a                sal_strdup
+                0x00000000004017bb                sal_strndup
+                0x0000000000401825                sal_strtok_r
+                0x0000000000401928                sal_ctoi
+                0x0000000000401a97                sal_ltoa
+                0x0000000000401b86                sal_itoa
+                0x0000000000401bbd                sal_ftoa
+                0x0000000000401de2                sal_vsnprintf
+                0x0000000000402b32                sal_vsprintf
+                0x0000000000402b61                sal_snprintf
+                0x0000000000402c42                sal_sprintf
+                0x0000000000402d21                sal_free_safe
+                0x0000000000402d43                sal_ceil_func
+                0x0000000000402d82                sal_floor_func
+                0x0000000000402dac                sal_rand
+                0x0000000000402ddd                sal_srand
+ .text          0x0000000000402df1      0x3e1 /home/zengchao/share/CBB-master/lib/libsal.a(alloc.o)
+                0x0000000000402df1                sal_get_alloc_counters
+                0x0000000000402e1c                sal_alloc
+                0x0000000000402f05                sal_free
+                0x0000000000403028                sal_dma_alloc
+                0x00000000004030d7                sal_dma_free
+                0x000000000040318c                sal_dma_flush
+                0x000000000040319a                sal_dma_inval
+                0x00000000004031a8                sal_dma_vtop
+                0x00000000004031b6                sal_dma_ptov
+                0x00000000004031c4                sal_memory_check
+ *fill*         0x00000000004031d2        0xe 
+ .text          0x00000000004031e0       0x72 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+                0x00000000004031e0                __libc_csu_init
+                0x0000000000403250                __libc_csu_fini
+ .text          0x0000000000403252        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+ .text          0x0000000000403252        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+ *(.gnu.warning)
+
+.fini           0x0000000000403254        0x9
+ *(SORT(.fini))
+ .fini          0x0000000000403254        0x4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
+                0x0000000000403254                _fini
+ .fini          0x0000000000403258        0x5 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
                 [!provide]                        PROVIDE (__etext, .)
                 [!provide]                        PROVIDE (_etext, .)
                 [!provide]                        PROVIDE (etext, .)
 
+<<<<<<< HEAD
 .rodata         0x0000000000403320      0x77d
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.cst4   0x0000000000403320        0x4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
@@ -271,10 +425,21 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
  *fill*         0x000000000040347b        0x5 
  .rodata        0x0000000000403480      0x578 /home/zengchao/share/CBB-master/lib/libsal.a(libc.o)
  .rodata        0x00000000004039f8       0xa5 /home/zengchao/share/CBB-master/lib/libsal.a(alloc.o)
+=======
+.rodata         0x0000000000403260      0x77d
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.cst4   0x0000000000403260        0x4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                0x0000000000403260                _IO_stdin_used
+ .rodata        0x0000000000403264      0x14e main.o
+ *fill*         0x00000000004033b2        0xe 
+ .rodata        0x00000000004033c0      0x578 /home/zengchao/share/CBB-master/lib/libsal.a(libc.o)
+ .rodata        0x0000000000403938       0xa5 /home/zengchao/share/CBB-master/lib/libsal.a(alloc.o)
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 
 .rodata1
  *(.rodata1)
 
+<<<<<<< HEAD
 .eh_frame_hdr   0x0000000000403aa0      0x17c
  *(.eh_frame_hdr)
  .eh_frame_hdr  0x0000000000403aa0      0x17c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
@@ -294,6 +459,27 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
  .eh_frame      0x00000000004041d8       0x60 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
                                          0x78 (size before relaxing)
  .eh_frame      0x0000000000404238        0x4 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+=======
+.eh_frame_hdr   0x00000000004039e0      0x174
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x00000000004039e0      0x174 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                0x00000000004039e0                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000403b58      0x5fc
+ *(.eh_frame)
+ .eh_frame      0x0000000000403b58       0x30 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+ .eh_frame      0x0000000000403b88       0x40 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+ .eh_frame      0x0000000000403bc8      0x100 main.o
+                                        0x118 (size before relaxing)
+ .eh_frame      0x0000000000403cc8      0x2e8 /home/zengchao/share/CBB-master/lib/libsal.a(libc.o)
+                                        0x300 (size before relaxing)
+ .eh_frame      0x0000000000403fb0      0x140 /home/zengchao/share/CBB-master/lib/libsal.a(alloc.o)
+                                        0x158 (size before relaxing)
+ .eh_frame      0x00000000004040f0       0x60 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+                                         0x78 (size before relaxing)
+ .eh_frame      0x0000000000404150        0x4 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
  *(.eh_frame.*)
 
 .gcc_except_table
@@ -379,6 +565,7 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
  *(.igot)
                 0x0000000000605fe8                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
 
+<<<<<<< HEAD
 .got.plt        0x0000000000605000       0xb0
  *(.got.plt)
  .got.plt       0x0000000000605000       0xb0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
@@ -437,17 +624,82 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
                 0x0000000000605100                sockfd
                 0x0000000000605108                . = ALIGN ((. != 0x0)?0x8:0x1)
  *fill*         0x0000000000605104        0x4 
+=======
+.got.plt        0x0000000000605000       0xa8
+ *(.got.plt)
+ .got.plt       0x0000000000605000       0xa8 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                0x0000000000605000                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x00000000006050a8        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.data           0x00000000006050a8       0x18
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00000000006050a8        0x4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                0x00000000006050a8                data_start
+                0x00000000006050a8                __data_start
+ .data          0x00000000006050ac        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
+ *fill*         0x00000000006050ac        0x4 
+ .data          0x00000000006050b0        0x8 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+                0x00000000006050b0                __dso_handle
+ .data          0x00000000006050b8        0x0 main.o
+ .data          0x00000000006050b8        0x8 /home/zengchao/share/CBB-master/lib/libsal.a(libc.o)
+ .data          0x00000000006050c0        0x0 /home/zengchao/share/CBB-master/lib/libsal.a(alloc.o)
+ .data          0x00000000006050c0        0x0 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .data          0x00000000006050c0        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+ .data          0x00000000006050c0        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+
+.tm_clone_table
+                0x00000000006050c0        0x0
+ .tm_clone_table
+                0x00000000006050c0        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+ .tm_clone_table
+                0x00000000006050c0        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+
+.data1
+ *(.data1)
+                0x00000000006050c0                _edata = .
+                [!provide]                        PROVIDE (edata, .)
+                0x00000000006050c0                . = .
+                0x00000000006050c0                __bss_start = .
+
+.bss            0x00000000006050c0       0x38
+ *(.dynbss)
+ .dynbss        0x00000000006050c0        0x8 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                0x00000000006050c0                stdin@@GLIBC_2.2.5
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00000000006050c8        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+ .bss           0x00000000006050c8        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
+ .bss           0x00000000006050c8        0x1 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+ .bss           0x00000000006050c9        0x0 main.o
+ .bss           0x00000000006050c9        0x0 /home/zengchao/share/CBB-master/lib/libsal.a(libc.o)
+ *fill*         0x00000000006050c9        0x7 
+ .bss           0x00000000006050d0       0x20 /home/zengchao/share/CBB-master/lib/libsal.a(alloc.o)
+ .bss           0x00000000006050f0        0x0 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .bss           0x00000000006050f0        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+ .bss           0x00000000006050f0        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+ *(COMMON)
+ COMMON         0x00000000006050f0        0x4 main.o
+                0x00000000006050f0                sockfd
+                0x00000000006050f8                . = ALIGN ((. != 0x0)?0x8:0x1)
+ *fill*         0x00000000006050f4        0x4 
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 
 .lbss
  *(.dynlbss)
  *(.lbss .lbss.* .gnu.linkonce.lb.*)
  *(LARGE_COMMON)
+<<<<<<< HEAD
                 0x0000000000605108                . = ALIGN (0x8)
                 0x0000000000605108                . = SEGMENT_START ("ldata-segment", .)
+=======
+                0x00000000006050f8                . = ALIGN (0x8)
+                0x00000000006050f8                . = SEGMENT_START ("ldata-segment", .)
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 
 .lrodata
  *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
 
+<<<<<<< HEAD
 .ldata          0x0000000000a05108        0x0
  *(.ldata .ldata.* .gnu.linkonce.l.*)
                 0x0000000000a05108                . = ALIGN ((. != 0x0)?0x8:0x1)
@@ -455,6 +707,15 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
                 0x0000000000a05108                _end = .
                 [!provide]                        PROVIDE (end, .)
                 0x0000000000a05108                . = DATA_SEGMENT_END (.)
+=======
+.ldata          0x0000000000a050f8        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000a050f8                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000a050f8                . = ALIGN (0x8)
+                0x0000000000a050f8                _end = .
+                [!provide]                        PROVIDE (end, .)
+                0x0000000000a050f8                . = DATA_SEGMENT_END (.)
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 
 .stab
  *(.stab)
@@ -474,14 +735,25 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 .stab.indexstr
  *(.stab.indexstr)
 
+<<<<<<< HEAD
 .comment        0x0000000000000000       0x34
+=======
+.comment        0x0000000000000000       0x68
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
  *(.comment)
  .comment       0x0000000000000000       0x34 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
                                          0x35 (size before relaxing)
  .comment       0x0000000000000034       0x35 main.o
+<<<<<<< HEAD
  .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libsal.a(libc.o)
  .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libsal.a(alloc.o)
  .comment       0x0000000000000034       0x35 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+=======
+ .comment       0x0000000000000034       0x34 /home/zengchao/share/CBB-master/lib/libsal.a(libc.o)
+                                         0x35 (size before relaxing)
+ .comment       0x0000000000000068       0x35 /home/zengchao/share/CBB-master/lib/libsal.a(alloc.o)
+ .comment       0x0000000000000068       0x35 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 
 .debug
  *(.debug)
@@ -507,6 +779,7 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
 .debug_pubnames
  *(.debug_pubnames)
 
+<<<<<<< HEAD
 .debug_info     0x0000000000000000     0x1aa0
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0xb9b main.o
@@ -524,10 +797,30 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
  .debug_line    0x0000000000000000      0x22c main.o
  .debug_line    0x000000000000022c      0x5ec /home/zengchao/share/CBB-master/lib/libsal.a(libc.o)
  .debug_line    0x0000000000000818      0x15f /home/zengchao/share/CBB-master/lib/libsal.a(alloc.o)
+=======
+.debug_info     0x0000000000000000     0x19a8
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0xaa3 main.o
+ .debug_info    0x0000000000000aa3      0xacb /home/zengchao/share/CBB-master/lib/libsal.a(libc.o)
+ .debug_info    0x000000000000156e      0x43a /home/zengchao/share/CBB-master/lib/libsal.a(alloc.o)
+
+.debug_abbrev   0x0000000000000000      0x53a
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x1dc main.o
+ .debug_abbrev  0x00000000000001dc      0x1e6 /home/zengchao/share/CBB-master/lib/libsal.a(libc.o)
+ .debug_abbrev  0x00000000000003c2      0x178 /home/zengchao/share/CBB-master/lib/libsal.a(alloc.o)
+
+.debug_line     0x0000000000000000      0x961
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x216 main.o
+ .debug_line    0x0000000000000216      0x5ec /home/zengchao/share/CBB-master/lib/libsal.a(libc.o)
+ .debug_line    0x0000000000000802      0x15f /home/zengchao/share/CBB-master/lib/libsal.a(alloc.o)
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
 
 .debug_frame
  *(.debug_frame)
 
+<<<<<<< HEAD
 .debug_str      0x0000000000000000      0x9ac
  *(.debug_str)
  .debug_str     0x0000000000000000      0x608 main.o
@@ -535,6 +828,15 @@ LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
  .debug_str     0x0000000000000608      0x27e /home/zengchao/share/CBB-master/lib/libsal.a(libc.o)
                                         0x380 (size before relaxing)
  .debug_str     0x0000000000000886      0x126 /home/zengchao/share/CBB-master/lib/libsal.a(alloc.o)
+=======
+.debug_str      0x0000000000000000      0x92e
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x583 main.o
+                                        0x5f4 (size before relaxing)
+ .debug_str     0x0000000000000583      0x285 /home/zengchao/share/CBB-master/lib/libsal.a(libc.o)
+                                        0x380 (size before relaxing)
+ .debug_str     0x0000000000000808      0x126 /home/zengchao/share/CBB-master/lib/libsal.a(alloc.o)
+>>>>>>> 314ffacdd6cf907e6a0d8e055d6ed217c9a8fed6
                                         0x248 (size before relaxing)
 
 .debug_loc
