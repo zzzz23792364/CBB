@@ -1,0 +1,945 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o)
+                              vad.o (WebRtcVad_Create)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o) (WebRtcVad_InitCore)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(division_operations.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o) (WebRtcSpl_DivW32W16)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(vad_sp.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o) (WebRtcVad_Downsampling)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(vad_filterbank.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o) (WebRtcVad_CalculateFeatures)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(energy.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_filterbank.o) (WebRtcSpl_Energy)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(get_scaling_square.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(energy.o) (WebRtcSpl_GetScalingSquare)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(resample_48khz.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o) (WebRtcSpl_Resample48khzTo8khz)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(vad_gmm.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o) (WebRtcVad_GaussianProbability)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(resample_fractional.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_48khz.o) (WebRtcSpl_Resample48khzTo32khz)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o) (WebRtcSpl_Init)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(resample_by_2_internal.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_48khz.o) (WebRtcSpl_DownBy2IntToShort)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(min_max_operations.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o) (WebRtcSpl_MaxAbsValueW16C)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(cross_correlation.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o) (WebRtcSpl_CrossCorrelationC)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(real_fft.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o) (WebRtcSpl_RealForwardFFTC)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(complex_fft.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(real_fft.o) (WebRtcSpl_ComplexFFT)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(downsample_fast.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o) (WebRtcSpl_DownsampleFastC)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(vector_scaling_operations.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o) (WebRtcSpl_ScaleAndAddVectorsWithRoundC)
+/home/zengchao/share/CBB-master/lib/libvad_src.a(complex_bit_reverse.o)
+                              /home/zengchao/share/CBB-master/lib/libvad_src.a(real_fft.o) (WebRtcSpl_ComplexBitReverse)
+/usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+                              /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o (__libc_csu_init)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libpthread.so.0               /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o) (pthread_once@@GLIBC_2.2.5)
+
+Allocating common symbols
+Common symbol       size              file
+
+WebRtcSpl_ScaleAndAddVectorsWithRound
+                    0x8               /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+WebRtcSpl_MinValueW32
+                    0x8               /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+WebRtcSpl_RealForwardFFT
+                    0x8               /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+WebRtcSpl_MaxAbsValueW32
+                    0x8               /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+WebRtcSpl_MaxValueW16
+                    0x8               /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+WebRtcSpl_RealInverseFFT
+                    0x8               /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+WebRtcSpl_MaxValueW32
+                    0x8               /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+WebRtcSpl_DownsampleFast
+                    0x8               /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+WebRtcSpl_CrossCorrelation
+                    0x8               /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+WebRtcSpl_MinValueW16
+                    0x8               /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+WebRtcSpl_MaxAbsValueW16
+                    0x8               /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 vad.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 vad_test.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(division_operations.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_sp.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_filterbank.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(energy.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(get_scaling_square.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_48khz.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_gmm.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_fractional.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_by_2_internal.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(min_max_operations.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(cross_correlation.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(real_fft.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_fft.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(downsample_fast.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vector_scaling_operations.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_bit_reverse.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+LOAD vad.o
+LOAD vad_test.o
+LOAD /home/zengchao/share/CBB-master/lib/libvad_src.a
+START GROUP
+END GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/libpthread.so
+START GROUP
+LOAD /lib/x86_64-linux-gnu/libpthread.so.0
+LOAD /usr/lib/x86_64-linux-gnu/libpthread_nonshared.a
+END GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/libm.so
+START GROUP
+LOAD /lib/x86_64-linux-gnu/libm.so.6
+LOAD /usr/lib/x86_64-linux-gnu/libmvec_nonshared.a
+LOAD /lib/x86_64-linux-gnu/libmvec.so.1
+END GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/librt.so
+LOAD /usr/lib/gcc/x86_64-linux-gnu/5/libgcc.a
+LOAD /usr/lib/gcc/x86_64-linux-gnu/5/libgcc_s.so
+LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/libc.so
+START GROUP
+LOAD /lib/x86_64-linux-gnu/libc.so.6
+LOAD /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+LOAD /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+END GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/5/libgcc.a
+LOAD /usr/lib/gcc/x86_64-linux-gnu/5/libgcc_s.so
+LOAD /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+                [!provide]                        PROVIDE (__executable_start, 0x400000)
+                0x0000000000400238                . = (0x400000 + SIZEOF_HEADERS)
+
+.interp         0x0000000000400238       0x1c
+ *(.interp)
+ .interp        0x0000000000400238       0x1c /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.note.ABI-tag   0x0000000000400254       0x20
+ .note.ABI-tag  0x0000000000400254       0x20 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.note.gnu.build-id
+                0x0000000000400274       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000400274       0x24 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x0000000000400298       0x24
+ *(.gnu.hash)
+ .gnu.hash      0x0000000000400298       0x24 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.dynsym         0x00000000004002c0      0x1e0
+ *(.dynsym)
+ .dynsym        0x00000000004002c0      0x1e0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.dynstr         0x00000000004004a0      0x118
+ *(.dynstr)
+ .dynstr        0x00000000004004a0      0x118 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.gnu.version    0x00000000004005b8       0x28
+ *(.gnu.version)
+ .gnu.version   0x00000000004005b8       0x28 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.gnu.version_d  0x00000000004005e0        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000004005e0        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.gnu.version_r  0x00000000004005e0       0x60
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000004005e0       0x60 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.rela.dyn       0x0000000000400640       0x18
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text     0x0000000000400640        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000400640       0x18 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x0000000000400658        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+
+.rela.plt       0x0000000000400658      0x168
+ *(.rela.plt)
+ .rela.plt      0x0000000000400658      0x168 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                [!provide]                        PROVIDE (__rela_iplt_start, .)
+ *(.rela.iplt)
+ .rela.iplt     0x00000000004007c0        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                [!provide]                        PROVIDE (__rela_iplt_end, .)
+
+.init           0x00000000004007c0       0x1a
+ *(SORT(.init))
+ .init          0x00000000004007c0       0x15 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
+                0x00000000004007c0                _init
+ .init          0x00000000004007d5        0x5 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+
+.plt            0x00000000004007e0      0x100
+ *(.plt)
+ .plt           0x00000000004007e0      0x100 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                0x00000000004007f0                free@@GLIBC_2.2.5
+                0x0000000000400800                puts@@GLIBC_2.2.5
+                0x0000000000400810                fread@@GLIBC_2.2.5
+                0x0000000000400820                pthread_once@@GLIBC_2.2.5
+                0x0000000000400830                __stack_chk_fail@@GLIBC_2.4
+                0x0000000000400840                printf@@GLIBC_2.2.5
+                0x0000000000400850                __assert_fail@@GLIBC_2.2.5
+                0x0000000000400860                memset@@GLIBC_2.2.5
+                0x0000000000400870                __libc_start_main@@GLIBC_2.2.5
+                0x0000000000400880                ftell@@GLIBC_2.2.5
+                0x0000000000400890                memcpy@@GLIBC_2.14
+                0x00000000004008a0                malloc@@GLIBC_2.2.5
+                0x00000000004008b0                fseek@@GLIBC_2.2.5
+                0x00000000004008c0                fopen@@GLIBC_2.2.5
+                0x00000000004008d0                perror@@GLIBC_2.2.5
+ *(.iplt)
+ .iplt          0x00000000004008e0        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.plt.got        0x00000000004008e0        0x8
+ *(.plt.got)
+ .plt.got       0x00000000004008e0        0x8 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.plt.bnd
+ *(.plt.bnd)
+
+.text           0x00000000004008f0     0x75e2
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ .text.unlikely
+                0x00000000004008f0        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+ .text.unlikely
+                0x00000000004008f0        0x0 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000000004008f0       0x2a /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                0x00000000004008f0                _start
+ .text          0x000000000040091a        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
+ *fill*         0x000000000040091a        0x6 
+ .text          0x0000000000400920       0xc6 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+ .text          0x00000000004009e6      0x376 vad.o
+                0x00000000004009e6                webrtc_vad_init
+                0x0000000000400a8d                webrtc_vad_process
+                0x0000000000400abf                voice_data_process
+                0x0000000000400bbd                main
+ .text          0x0000000000400d5c        0x0 vad_test.o
+ .text          0x0000000000400d5c      0x2bf /home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o)
+                0x0000000000400d5c                WebRtcVad_Create
+                0x0000000000400dcf                WebRtcVad_Free
+                0x0000000000400dfc                WebRtcVad_Init
+                0x0000000000400e16                WebRtcVad_set_mode
+                0x0000000000400e68                WebRtcVad_Process
+                0x0000000000400f89                WebRtcVad_ValidRateAndFrameLength
+ .text          0x000000000040101b     0x18f0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o)
+                0x00000000004021bb                WebRtcVad_InitCore
+                0x00000000004023c7                WebRtcVad_set_mode_core
+                0x00000000004025e9                WebRtcVad_CalcVad48khz
+                0x000000000040270e                WebRtcVad_CalcVad32khz
+                0x00000000004027e9                WebRtcVad_CalcVad16khz
+                0x0000000000402892                WebRtcVad_CalcVad8khz
+ .text          0x000000000040290b      0x215 /home/zengchao/share/CBB-master/lib/libvad_src.a(division_operations.o)
+                0x000000000040290b                WebRtcSpl_DivU32U16
+                0x0000000000402936                WebRtcSpl_DivW32W16
+                0x000000000040295d                WebRtcSpl_DivW32W16ResW16
+                0x0000000000402984                WebRtcSpl_DivResultInQ31
+                0x0000000000402a15                WebRtcSpl_DivW32HiLow
+ .text          0x0000000000402b20      0x5e7 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_sp.o)
+                0x0000000000402b20                WebRtcVad_Downsampling
+                0x0000000000402c4f                WebRtcVad_FindMinimum
+ .text          0x0000000000403107      0xa40 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_filterbank.o)
+                0x00000000004035fe                WebRtcVad_CalculateFeatures
+ .text          0x0000000000403b47       0x88 /home/zengchao/share/CBB-master/lib/libvad_src.a(energy.o)
+                0x0000000000403b47                WebRtcSpl_Energy
+ .text          0x0000000000403bcf      0x207 /home/zengchao/share/CBB-master/lib/libvad_src.a(get_scaling_square.o)
+                0x0000000000403d12                WebRtcSpl_GetScalingSquare
+ .text          0x0000000000403dd6      0x4e2 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_48khz.o)
+                0x0000000000403dd6                WebRtcSpl_Resample48khzTo16khz
+                0x0000000000403e90                WebRtcSpl_ResetResample48khzTo16khz
+                0x0000000000403ee9                WebRtcSpl_Resample16khzTo48khz
+                0x0000000000403fa3                WebRtcSpl_ResetResample16khzTo48khz
+                0x0000000000403ffc                WebRtcSpl_Resample48khzTo8khz
+                0x00000000004040e3                WebRtcSpl_ResetResample48khzTo8khz
+                0x0000000000404156                WebRtcSpl_Resample8khzTo48khz
+                0x0000000000404245                WebRtcSpl_ResetResample8khzTo48khz
+ .text          0x00000000004042b8      0x117 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_gmm.o)
+                0x00000000004042b8                WebRtcVad_GaussianProbability
+ .text          0x00000000004043cf      0x85f /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_fractional.o)
+                0x00000000004043cf                WebRtcSpl_Resample48khzTo32khz
+                0x00000000004045a7                WebRtcSpl_Resample32khzTo24khz
+                0x0000000000404a57                WebRtcSpl_Resample44khzTo32khz
+ .text          0x0000000000404c2e       0xc2 /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+                0x0000000000404cdf                WebRtcSpl_Init
+ .text          0x0000000000404cf0     0x18da /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_by_2_internal.o)
+                0x0000000000404cf0                WebRtcSpl_DownBy2IntToShort
+                0x0000000000405087                WebRtcSpl_DownBy2ShortToInt
+                0x0000000000405337                WebRtcSpl_UpBy2ShortToInt
+                0x00000000004055c8                WebRtcSpl_UpBy2IntToInt
+                0x0000000000405841                WebRtcSpl_UpBy2IntToShort
+                0x0000000000405b0c                WebRtcSpl_LPBy2ShortToInt
+                0x0000000000406077                WebRtcSpl_LPBy2IntToInt
+ .text          0x00000000004065ca      0x59c /home/zengchao/share/CBB-master/lib/libvad_src.a(min_max_operations.o)
+                0x00000000004065ca                WebRtcSpl_MaxAbsValueW16C
+                0x0000000000406659                WebRtcSpl_MaxAbsValueW32C
+                0x00000000004066e6                WebRtcSpl_MaxValueW16C
+                0x000000000040675c                WebRtcSpl_MaxValueW32C
+                0x00000000004067d5                WebRtcSpl_MinValueW16C
+                0x000000000040684b                WebRtcSpl_MinValueW32C
+                0x00000000004068c4                WebRtcSpl_MaxAbsIndexW16
+                0x0000000000406950                WebRtcSpl_MaxIndexW16
+                0x00000000004069d3                WebRtcSpl_MaxIndexW32
+                0x0000000000406a5b                WebRtcSpl_MinIndexW16
+                0x0000000000406ade                WebRtcSpl_MinIndexW32
+ .text          0x0000000000406b66       0xce /home/zengchao/share/CBB-master/lib/libvad_src.a(cross_correlation.o)
+                0x0000000000406b66                WebRtcSpl_CrossCorrelationC
+ .text          0x0000000000406c34      0x13e /home/zengchao/share/CBB-master/lib/libvad_src.a(real_fft.o)
+                0x0000000000406c34                WebRtcSpl_CreateRealFFT
+                0x0000000000406c77                WebRtcSpl_FreeRealFFT
+                0x0000000000406c92                WebRtcSpl_RealForwardFFTC
+                0x0000000000406d02                WebRtcSpl_RealInverseFFTC
+ .text          0x0000000000406d72      0x8ff /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_fft.o)
+                0x0000000000406d72                WebRtcSpl_ComplexFFT
+                0x00000000004071af                WebRtcSpl_ComplexIFFT
+ .text          0x0000000000407671      0x12b /home/zengchao/share/CBB-master/lib/libvad_src.a(downsample_fast.o)
+                0x00000000004076a5                WebRtcSpl_DownsampleFastC
+ .text          0x000000000040779c      0x4af /home/zengchao/share/CBB-master/lib/libvad_src.a(vector_scaling_operations.o)
+                0x00000000004077d0                WebRtcSpl_VectorBitShiftW16
+                0x0000000000407870                WebRtcSpl_VectorBitShiftW32
+                0x0000000000407906                WebRtcSpl_VectorBitShiftW32ToW16
+                0x00000000004079c1                WebRtcSpl_ScaleVector
+                0x0000000000407a3b                WebRtcSpl_ScaleVectorWithSat
+                0x0000000000407aca                WebRtcSpl_ScaleAndAddVectors
+                0x0000000000407b71                WebRtcSpl_ScaleAndAddVectorsWithRoundC
+ .text          0x0000000000407c4b      0x211 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_bit_reverse.o)
+                0x0000000000407c4b                WebRtcSpl_ComplexBitReverse
+ *fill*         0x0000000000407e5c        0x4 
+ .text          0x0000000000407e60       0x72 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+                0x0000000000407e60                __libc_csu_init
+                0x0000000000407ed0                __libc_csu_fini
+ .text          0x0000000000407ed2        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+ .text          0x0000000000407ed2        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+ *(.gnu.warning)
+
+.fini           0x0000000000407ed4        0x9
+ *(SORT(.fini))
+ .fini          0x0000000000407ed4        0x4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
+                0x0000000000407ed4                _fini
+ .fini          0x0000000000407ed8        0x5 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+                [!provide]                        PROVIDE (__etext, .)
+                [!provide]                        PROVIDE (_etext, .)
+                [!provide]                        PROVIDE (etext, .)
+
+.rodata         0x0000000000407ee0      0xf00
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.cst4   0x0000000000407ee0        0x4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                0x0000000000407ee0                _IO_stdin_used
+ .rodata        0x0000000000407ee4       0xad vad.o
+ *fill*         0x0000000000407f91        0xf 
+ .rodata        0x0000000000407fa0       0x2c /home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o)
+ *fill*         0x0000000000407fcc        0x4 
+ .rodata        0x0000000000407fd0      0x174 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o)
+ *fill*         0x0000000000408144        0xc 
+ .rodata        0x0000000000408150       0x46 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_sp.o)
+ *fill*         0x0000000000408196        0xa 
+ .rodata        0x00000000004081a0       0xac /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_filterbank.o)
+ .rodata        0x000000000040824c        0x6 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_gmm.o)
+ *fill*         0x0000000000408252        0xe 
+ .rodata        0x0000000000408260       0xa8 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_fractional.o)
+ .rodata        0x0000000000408308        0xc /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_by_2_internal.o)
+ *fill*         0x0000000000408314        0xc 
+ .rodata        0x0000000000408320      0x800 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_fft.o)
+ .rodata        0x0000000000408b20      0x2c0 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_bit_reverse.o)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000408de0      0x2f4
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000408de0      0x2f4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                0x0000000000408de0                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x00000000004090d8      0xc0c
+ *(.eh_frame)
+ .eh_frame      0x00000000004090d8       0x30 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+ .eh_frame      0x0000000000409108       0x40 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+ .eh_frame      0x0000000000409148       0x80 vad.o
+                                         0x98 (size before relaxing)
+ .eh_frame      0x00000000004091c8       0xc0 /home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o)
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x0000000000409288      0x120 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o)
+                                        0x138 (size before relaxing)
+ .eh_frame      0x00000000004093a8       0xa0 /home/zengchao/share/CBB-master/lib/libvad_src.a(division_operations.o)
+                                         0xb8 (size before relaxing)
+ .eh_frame      0x0000000000409448       0x40 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_sp.o)
+                                         0x58 (size before relaxing)
+ .eh_frame      0x0000000000409488       0xc0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_filterbank.o)
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x0000000000409548       0x20 /home/zengchao/share/CBB-master/lib/libvad_src.a(energy.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000409568       0x60 /home/zengchao/share/CBB-master/lib/libvad_src.a(get_scaling_square.o)
+                                         0x78 (size before relaxing)
+ .eh_frame      0x00000000004095c8      0x100 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_48khz.o)
+                                        0x118 (size before relaxing)
+ .eh_frame      0x00000000004096c8       0x20 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_gmm.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x00000000004096e8       0x80 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_fractional.o)
+                                         0x98 (size before relaxing)
+ .eh_frame      0x0000000000409768       0x80 /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+                                         0x98 (size before relaxing)
+ .eh_frame      0x00000000004097e8       0xe0 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_by_2_internal.o)
+                                         0xf8 (size before relaxing)
+ .eh_frame      0x00000000004098c8      0x160 /home/zengchao/share/CBB-master/lib/libvad_src.a(min_max_operations.o)
+                                        0x178 (size before relaxing)
+ .eh_frame      0x0000000000409a28       0x20 /home/zengchao/share/CBB-master/lib/libvad_src.a(cross_correlation.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000409a48       0x80 /home/zengchao/share/CBB-master/lib/libvad_src.a(real_fft.o)
+                                         0x98 (size before relaxing)
+ .eh_frame      0x0000000000409ac8       0x40 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_fft.o)
+                                         0x58 (size before relaxing)
+ .eh_frame      0x0000000000409b08       0x48 /home/zengchao/share/CBB-master/lib/libvad_src.a(downsample_fast.o)
+                                         0x60 (size before relaxing)
+ .eh_frame      0x0000000000409b50      0x110 /home/zengchao/share/CBB-master/lib/libvad_src.a(vector_scaling_operations.o)
+                                        0x120 (size before relaxing)
+ .eh_frame      0x0000000000409c60       0x20 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_bit_reverse.o)
+                                         0x38 (size before relaxing)
+ .eh_frame      0x0000000000409c80       0x60 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+                                         0x78 (size before relaxing)
+ .eh_frame      0x0000000000409ce0        0x4 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0000000000609e00                . = DATA_SEGMENT_ALIGN (0x200000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000609e00        0x0
+                [!provide]                        PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000000609e00        0x8
+                0x0000000000609e00                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x0000000000609e00        0x8 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+                0x0000000000609e08                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0000000000609e08        0x8
+                [!provide]                        PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x0000000000609e08        0x8 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+                [!provide]                        PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr            0x0000000000609e10        0x8
+ *(.jcr)
+ .jcr           0x0000000000609e10        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+ .jcr           0x0000000000609e10        0x8 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x0000000000609e18      0x1e0
+ *(.dynamic)
+ .dynamic       0x0000000000609e18      0x1e0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                0x0000000000609e18                _DYNAMIC
+
+.got            0x0000000000609ff8        0x8
+ *(.got)
+ .got           0x0000000000609ff8        0x8 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+ *(.igot)
+                0x000000000060afe8                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+
+.got.plt        0x000000000060a000       0x90
+ *(.got.plt)
+ .got.plt       0x000000000060a000       0x90 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                0x000000000060a000                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x000000000060a090        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+
+.data           0x000000000060a090       0x14
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x000000000060a090        0x4 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+                0x000000000060a090                data_start
+                0x000000000060a090                __data_start
+ .data          0x000000000060a094        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
+ *fill*         0x000000000060a094        0x4 
+ .data          0x000000000060a098        0x8 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+                0x000000000060a098                __dso_handle
+ .data          0x000000000060a0a0        0x4 vad.o
+                0x000000000060a0a0                current_status
+ .data          0x000000000060a0a4        0x0 vad_test.o
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(division_operations.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_sp.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_filterbank.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(energy.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(get_scaling_square.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_48khz.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_gmm.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_fractional.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_by_2_internal.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(min_max_operations.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(cross_correlation.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(real_fft.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_fft.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(downsample_fast.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vector_scaling_operations.o)
+ .data          0x000000000060a0a4        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_bit_reverse.o)
+ .data          0x000000000060a0a4        0x0 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .data          0x000000000060a0a4        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+ .data          0x000000000060a0a4        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+
+.tm_clone_table
+                0x000000000060a0a8        0x0
+ .tm_clone_table
+                0x000000000060a0a8        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+ .tm_clone_table
+                0x000000000060a0a8        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+
+.data1
+ *(.data1)
+                0x000000000060a0a8                _edata = .
+                [!provide]                        PROVIDE (edata, .)
+                0x000000000060a0a8                . = .
+                0x000000000060a0a8                __bss_start = .
+
+.bss            0x000000000060a0a8       0x60
+ *(.dynbss)
+ .dynbss        0x000000000060a0a8        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000000000060a0a8        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o
+ .bss           0x000000000060a0a8        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o
+ .bss           0x000000000060a0a8        0x1 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+ .bss           0x000000000060a0a9        0x0 vad.o
+ .bss           0x000000000060a0a9        0x0 vad_test.o
+ .bss           0x000000000060a0a9        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o)
+ .bss           0x000000000060a0a9        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o)
+ .bss           0x000000000060a0a9        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(division_operations.o)
+ .bss           0x000000000060a0a9        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_sp.o)
+ .bss           0x000000000060a0a9        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_filterbank.o)
+ .bss           0x000000000060a0a9        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(energy.o)
+ .bss           0x000000000060a0a9        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(get_scaling_square.o)
+ .bss           0x000000000060a0a9        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_48khz.o)
+ .bss           0x000000000060a0a9        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_gmm.o)
+ .bss           0x000000000060a0a9        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_fractional.o)
+ *fill*         0x000000000060a0a9        0x3 
+ .bss           0x000000000060a0ac        0x4 /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+ .bss           0x000000000060a0b0        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_by_2_internal.o)
+ .bss           0x000000000060a0b0        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(min_max_operations.o)
+ .bss           0x000000000060a0b0        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(cross_correlation.o)
+ .bss           0x000000000060a0b0        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(real_fft.o)
+ .bss           0x000000000060a0b0        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_fft.o)
+ .bss           0x000000000060a0b0        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(downsample_fast.o)
+ .bss           0x000000000060a0b0        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(vector_scaling_operations.o)
+ .bss           0x000000000060a0b0        0x0 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_bit_reverse.o)
+ .bss           0x000000000060a0b0        0x0 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .bss           0x000000000060a0b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+ .bss           0x000000000060a0b0        0x0 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+ *(COMMON)
+ COMMON         0x000000000060a0b0       0x58 /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+                0x000000000060a0b0                WebRtcSpl_ScaleAndAddVectorsWithRound
+                0x000000000060a0b8                WebRtcSpl_MinValueW32
+                0x000000000060a0c0                WebRtcSpl_RealForwardFFT
+                0x000000000060a0c8                WebRtcSpl_MaxAbsValueW32
+                0x000000000060a0d0                WebRtcSpl_MaxValueW16
+                0x000000000060a0d8                WebRtcSpl_RealInverseFFT
+                0x000000000060a0e0                WebRtcSpl_MaxValueW32
+                0x000000000060a0e8                WebRtcSpl_DownsampleFast
+                0x000000000060a0f0                WebRtcSpl_CrossCorrelation
+                0x000000000060a0f8                WebRtcSpl_MinValueW16
+                0x000000000060a100                WebRtcSpl_MaxAbsValueW16
+                0x000000000060a108                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x000000000060a108                . = ALIGN (0x8)
+                0x000000000060a108                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000a0a108        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000a0a108                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000a0a108                . = ALIGN (0x8)
+                0x0000000000a0a108                _end = .
+                [!provide]                        PROVIDE (end, .)
+                0x0000000000a0a108                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x34
+ *(.comment)
+ .comment       0x0000000000000000       0x34 /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o
+                                         0x35 (size before relaxing)
+ .comment       0x0000000000000034       0x35 vad.o
+ .comment       0x0000000000000034       0x35 vad_test.o
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(division_operations.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_sp.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_filterbank.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(energy.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(get_scaling_square.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_48khz.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_gmm.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_fractional.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_by_2_internal.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(min_max_operations.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(cross_correlation.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(real_fft.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_fft.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(downsample_fast.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(vector_scaling_operations.o)
+ .comment       0x0000000000000034       0x35 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_bit_reverse.o)
+ .comment       0x0000000000000034       0x35 /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x3e0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x30 vad.o
+ .debug_aranges
+                0x0000000000000030       0x20 vad_test.o
+ .debug_aranges
+                0x0000000000000050       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o)
+ .debug_aranges
+                0x0000000000000080       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o)
+ .debug_aranges
+                0x00000000000000b0       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(division_operations.o)
+ .debug_aranges
+                0x00000000000000e0       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_sp.o)
+ .debug_aranges
+                0x0000000000000110       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_filterbank.o)
+ .debug_aranges
+                0x0000000000000140       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(energy.o)
+ .debug_aranges
+                0x0000000000000170       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(get_scaling_square.o)
+ .debug_aranges
+                0x00000000000001a0       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_48khz.o)
+ .debug_aranges
+                0x00000000000001d0       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_gmm.o)
+ .debug_aranges
+                0x0000000000000200       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_fractional.o)
+ .debug_aranges
+                0x0000000000000230       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+ .debug_aranges
+                0x0000000000000260       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_by_2_internal.o)
+ .debug_aranges
+                0x0000000000000290       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(min_max_operations.o)
+ .debug_aranges
+                0x00000000000002c0       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(cross_correlation.o)
+ .debug_aranges
+                0x00000000000002f0       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(real_fft.o)
+ .debug_aranges
+                0x0000000000000320       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_fft.o)
+ .debug_aranges
+                0x0000000000000350       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(downsample_fast.o)
+ .debug_aranges
+                0x0000000000000380       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(vector_scaling_operations.o)
+ .debug_aranges
+                0x00000000000003b0       0x30 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_bit_reverse.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x4fdf
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x4a4 vad.o
+ .debug_info    0x00000000000004a4       0x64 vad_test.o
+ .debug_info    0x0000000000000508      0x562 /home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o)
+ .debug_info    0x0000000000000a6a      0xd2a /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o)
+ .debug_info    0x0000000000001794      0x2b4 /home/zengchao/share/CBB-master/lib/libvad_src.a(division_operations.o)
+ .debug_info    0x0000000000001a48      0x4f1 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_sp.o)
+ .debug_info    0x0000000000001f39      0x810 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_filterbank.o)
+ .debug_info    0x0000000000002749      0x14c /home/zengchao/share/CBB-master/lib/libvad_src.a(energy.o)
+ .debug_info    0x0000000000002895      0x1ee /home/zengchao/share/CBB-master/lib/libvad_src.a(get_scaling_square.o)
+ .debug_info    0x0000000000002a83      0x40d /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_48khz.o)
+ .debug_info    0x0000000000002e90      0x185 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_gmm.o)
+ .debug_info    0x0000000000003015      0x308 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_fractional.o)
+ .debug_info    0x000000000000331d      0x3bb /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+ .debug_info    0x00000000000036d8      0x4dc /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_by_2_internal.o)
+ .debug_info    0x0000000000003bb4      0x4fd /home/zengchao/share/CBB-master/lib/libvad_src.a(min_max_operations.o)
+ .debug_info    0x00000000000040b1      0x136 /home/zengchao/share/CBB-master/lib/libvad_src.a(cross_correlation.o)
+ .debug_info    0x00000000000041e7      0x1c0 /home/zengchao/share/CBB-master/lib/libvad_src.a(real_fft.o)
+ .debug_info    0x00000000000043a7      0x356 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_fft.o)
+ .debug_info    0x00000000000046fd      0x1b8 /home/zengchao/share/CBB-master/lib/libvad_src.a(downsample_fast.o)
+ .debug_info    0x00000000000048b5      0x502 /home/zengchao/share/CBB-master/lib/libvad_src.a(vector_scaling_operations.o)
+ .debug_info    0x0000000000004db7      0x228 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_bit_reverse.o)
+
+.debug_abbrev   0x0000000000000000     0x135a
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x140 vad.o
+ .debug_abbrev  0x0000000000000140       0x26 vad_test.o
+ .debug_abbrev  0x0000000000000166      0x15a /home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o)
+ .debug_abbrev  0x00000000000002c0      0x19f /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o)
+ .debug_abbrev  0x000000000000045f       0xc0 /home/zengchao/share/CBB-master/lib/libvad_src.a(division_operations.o)
+ .debug_abbrev  0x000000000000051f      0x14d /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_sp.o)
+ .debug_abbrev  0x000000000000066c      0x1a4 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_filterbank.o)
+ .debug_abbrev  0x0000000000000810       0x97 /home/zengchao/share/CBB-master/lib/libvad_src.a(energy.o)
+ .debug_abbrev  0x00000000000008a7       0xc0 /home/zengchao/share/CBB-master/lib/libvad_src.a(get_scaling_square.o)
+ .debug_abbrev  0x0000000000000967       0xd9 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_48khz.o)
+ .debug_abbrev  0x0000000000000a40       0x97 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_gmm.o)
+ .debug_abbrev  0x0000000000000ad7       0xe8 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_fractional.o)
+ .debug_abbrev  0x0000000000000bbf      0x10d /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+ .debug_abbrev  0x0000000000000ccc      0x105 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_by_2_internal.o)
+ .debug_abbrev  0x0000000000000dd1       0xb1 /home/zengchao/share/CBB-master/lib/libvad_src.a(min_max_operations.o)
+ .debug_abbrev  0x0000000000000e82       0x84 /home/zengchao/share/CBB-master/lib/libvad_src.a(cross_correlation.o)
+ .debug_abbrev  0x0000000000000f06       0xda /home/zengchao/share/CBB-master/lib/libvad_src.a(real_fft.o)
+ .debug_abbrev  0x0000000000000fe0      0x115 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_fft.o)
+ .debug_abbrev  0x00000000000010f5       0xaf /home/zengchao/share/CBB-master/lib/libvad_src.a(downsample_fast.o)
+ .debug_abbrev  0x00000000000011a4       0xfb /home/zengchao/share/CBB-master/lib/libvad_src.a(vector_scaling_operations.o)
+ .debug_abbrev  0x000000000000129f       0xbb /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_bit_reverse.o)
+
+.debug_line     0x0000000000000000     0x1eca
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x152 vad.o
+ .debug_line    0x0000000000000152       0x1d vad_test.o
+ .debug_line    0x000000000000016f      0x13c /home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o)
+ .debug_line    0x00000000000002ab      0x3ac /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o)
+ .debug_line    0x0000000000000657       0xb9 /home/zengchao/share/CBB-master/lib/libvad_src.a(division_operations.o)
+ .debug_line    0x0000000000000710      0x19f /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_sp.o)
+ .debug_line    0x00000000000008af      0x22a /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_filterbank.o)
+ .debug_line    0x0000000000000ad9       0x84 /home/zengchao/share/CBB-master/lib/libvad_src.a(energy.o)
+ .debug_line    0x0000000000000b5d      0x11f /home/zengchao/share/CBB-master/lib/libvad_src.a(get_scaling_square.o)
+ .debug_line    0x0000000000000c7c       0xf7 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_48khz.o)
+ .debug_line    0x0000000000000d73       0x7e /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_gmm.o)
+ .debug_line    0x0000000000000df1      0x280 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_fractional.o)
+ .debug_line    0x0000000000001071       0xd5 /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+ .debug_line    0x0000000000001146      0x4b9 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_by_2_internal.o)
+ .debug_line    0x00000000000015ff      0x1d2 /home/zengchao/share/CBB-master/lib/libvad_src.a(min_max_operations.o)
+ .debug_line    0x00000000000017d1       0x8d /home/zengchao/share/CBB-master/lib/libvad_src.a(cross_correlation.o)
+ .debug_line    0x000000000000185e       0x7c /home/zengchao/share/CBB-master/lib/libvad_src.a(real_fft.o)
+ .debug_line    0x00000000000018da      0x28b /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_fft.o)
+ .debug_line    0x0000000000001b65       0xc8 /home/zengchao/share/CBB-master/lib/libvad_src.a(downsample_fast.o)
+ .debug_line    0x0000000000001c2d      0x1c9 /home/zengchao/share/CBB-master/lib/libvad_src.a(vector_scaling_operations.o)
+ .debug_line    0x0000000000001df6       0xd4 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_bit_reverse.o)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000     0x19ea
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x303 vad.o
+                                        0x35d (size before relaxing)
+ .debug_str     0x0000000000000303        0xb vad_test.o
+                                         0xf4 (size before relaxing)
+ .debug_str     0x000000000000030e      0x2f0 /home/zengchao/share/CBB-master/lib/libvad_src.a(webrtc_vad.o)
+                                        0x3df (size before relaxing)
+ .debug_str     0x00000000000005fe      0x50f /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_core.o)
+                                        0x7dc (size before relaxing)
+ .debug_str     0x0000000000000b0d      0x10a /home/zengchao/share/CBB-master/lib/libvad_src.a(division_operations.o)
+                                        0x227 (size before relaxing)
+ .debug_str     0x0000000000000c17       0xfa /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_sp.o)
+                                        0x3c0 (size before relaxing)
+ .debug_str     0x0000000000000d11      0x1ad /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_filterbank.o)
+                                        0x4e4 (size before relaxing)
+ .debug_str     0x0000000000000ebe       0x43 /home/zengchao/share/CBB-master/lib/libvad_src.a(energy.o)
+                                        0x175 (size before relaxing)
+ .debug_str     0x0000000000000f01       0x78 /home/zengchao/share/CBB-master/lib/libvad_src.a(get_scaling_square.o)
+                                        0x1da (size before relaxing)
+ .debug_str     0x0000000000000f79      0x1ba /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_48khz.o)
+                                        0x317 (size before relaxing)
+ .debug_str     0x0000000000001133       0x61 /home/zengchao/share/CBB-master/lib/libvad_src.a(vad_gmm.o)
+                                        0x18f (size before relaxing)
+ .debug_str     0x0000000000001194       0xec /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_fractional.o)
+                                        0x209 (size before relaxing)
+ .debug_str     0x0000000000001280      0x16e /home/zengchao/share/CBB-master/lib/libvad_src.a(spl_init.o)
+                                        0x349 (size before relaxing)
+ .debug_str     0x00000000000013ee       0xe5 /home/zengchao/share/CBB-master/lib/libvad_src.a(resample_by_2_internal.o)
+                                        0x20d (size before relaxing)
+ .debug_str     0x00000000000014d3      0x12d /home/zengchao/share/CBB-master/lib/libvad_src.a(min_max_operations.o)
+                                        0x280 (size before relaxing)
+ .debug_str     0x0000000000001600       0x6a /home/zengchao/share/CBB-master/lib/libvad_src.a(cross_correlation.o)
+                                        0x182 (size before relaxing)
+ .debug_str     0x000000000000166a       0x73 /home/zengchao/share/CBB-master/lib/libvad_src.a(real_fft.o)
+                                        0x1af (size before relaxing)
+ .debug_str     0x00000000000016dd       0x7a /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_fft.o)
+                                        0x1d0 (size before relaxing)
+ .debug_str     0x0000000000001757       0xa5 /home/zengchao/share/CBB-master/lib/libvad_src.a(downsample_fast.o)
+                                        0x1da (size before relaxing)
+ .debug_str     0x00000000000017fc      0x189 /home/zengchao/share/CBB-master/lib/libvad_src.a(vector_scaling_operations.o)
+                                        0x30e (size before relaxing)
+ .debug_str     0x0000000000001985       0x65 /home/zengchao/share/CBB-master/lib/libvad_src.a(complex_bit_reverse.o)
+                                        0x17a (size before relaxing)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(/home/zengchao/share/CBB-master/bin/vad.out elf64-x86-64)
